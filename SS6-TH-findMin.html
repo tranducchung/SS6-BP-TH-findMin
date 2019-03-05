@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+function findMin(Array) {
+    if(Array.length===0){
+        return -1
+    }
+    let min = Array[0];
+    for (let i=0;i<Array.length;i++){
+        if(Array[i]<min){
+            min = Array[i]
+        }
+    }
+    return min;
+}
+    let number =[0,0,0,0,0,0];
+    let min = findMin(number);
+    document.write("Giá trị nhỏ nhất trong mảng là : "+ min);
+</script>
+</body>
+</html>
